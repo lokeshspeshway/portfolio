@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 
 export default function Header() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: '#0c0c0cff' }}>
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           Lokesh Kanta

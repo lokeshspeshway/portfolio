@@ -1,6 +1,6 @@
 // src/components/Skills.js
 import React from 'react';
-import { Box, Typography, Chip, Paper } from '@mui/material';
+import { Box, Typography, Chip, Grid } from '@mui/material';
 
 const skills = [
   'HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'TypeScript', 'Material-UI',
@@ -10,13 +10,31 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Paper elevation={3} sx={{ p: 3, mt: 3 }}>
-      <Typography variant="h4" gutterBottom>Technical Skills</Typography>
+    <Grid container spacing={2} sx={{ marginTop: '10%' }}>
+      <Typography
+        variant="h4"
+        gutterBottom
+        sx={{ width: '100%', color: '#fff', fontWeight: 'bold' }} // ✅ White heading
+      >
+        Technical Skills
+      </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
         {skills.map((skill, index) => (
-          <Chip key={index} label={skill} color="primary" variant="outlined" />
+          <Chip
+            key={index}
+            label={skill}
+            variant="outlined"
+            sx={{
+              color: '#fff', // ✅ White text
+              borderColor: '#fff', // ✅ White border
+              fontWeight: '500',
+              '&:hover': {
+                backgroundColor: 'rgba(255,255,255,0.2)', // ✅ Light hover effect
+              }
+            }}
+          />
         ))}
       </Box>
-    </Paper>
+    </Grid>
   );
 }

@@ -28,7 +28,7 @@ function App() {
         }}
       >
         <Header />
-        <Container maxWidth="lg" sx={{ backgroundColor: 'rgba(0,0,0,0.6)', borderRadius: 2, p: 3, mt: 2 }}>
+        <Container maxWidth="lg" sx={{ backgroundColor: 'rgba(0,0,0,0.6)', borderRadius: 2, p: 2, mt: 2 }}>
           <About />
           <Skills />
           <Experience />

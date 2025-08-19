@@ -34,7 +34,7 @@ export default function About() {
               About Me
             </Typography>
             <Typography variant="body1" sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-              I am a passionate <strong>Java Full Stack Developer</strong> with 1+ years of experience in
+              I am a passionate <strong>Java Full Stack Developer</strong> with 1.5+ years of experience in
               designing, developing, and maintaining scalable full-stack applications.
               Skilled in both frontend and backend development, I specialize in
               <strong> React.js, Java, Node.js, and PostgreSQL</strong>.
